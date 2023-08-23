@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/*
+  Цвета
+*/
+.grid {
+  max-width: 960px;
+  margin: 0 auto 0 auto; }
+
+.menu {
+  padding-bottom: 30px; }
+
+#logo {
+  width: 56px;
+  height: 56px;
+  margin: 40px 40px 0 0;
+  float: left;
+  font-size: 28px;
+  font-weight: 700;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat; }
+
+#short-contacts {
+  float: left;
+  margin: 45px 0 0 0;
+  font-size: 14px;
+  line-height: 20px; }
+
+#short-contacts a {
+  display: inline-block;
+  color: white;
+  text-decoration: none; }
+
+#short-contacts .to-map {
+  border-bottom: 1px dashed white; }
+
+ul.menu-main {
+  padding: 40px 0 0 0;
+  float: right;
+  list-style: none; }
+  ul.menu-main li {
+    display: inline-block; }
+    ul.menu-main li a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      margin: 0 0 0 15px;
+      font-weight: 600;
+      color: #5E9816;
+      padding: 15px 15px 15px 17px; }
+      ul.menu-main li a:hover {
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 15px 13px 15px 15px; }
+      ul.menu-main li a.active {
+        border: 2px solid #5E9816;
+        border-radius: 5px;
+        padding: 15px; }
+
+#header-main {
+  width: 100%;
+  background-color: #1f3043;
+  background-image: url(../img/fish-0.jpg);
+  color: white;
+  background-size: cover; }
+
+/*#header-main .grid {
+  height: 100px;
+  position: relative;
+  z-index: 999;
+  opacity: 0.5;
+  margin: 0 auto 0 auto;
+}*/
+.showitems {
+  display: block !important; }
+
+@media screen and (max-width: 960px) {
+  #header-main {
+    background-image: none; }
+  .flex-logo-contacts {
+    display: flex;
+    justify-content: flex-end; }
+  #short-contacts {
+    display: inline-block;
+    margin: 10px; }
+  #logo {
+    display: inline-block;
+    margin: 0; }
+  .menu {
+    height: 65px;
+    background-color: #333;
+    position: relative;
+    padding: 0; }
+  ul.menu-main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: inset 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    display: none; }
+    ul.menu-main li {
+      list-style-position: inside;
+      display: block;
+      margin: 0; }
+      ul.menu-main li a {
+        border: none;
+        color: white;
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #2578BE;
+        transition: background-color 0.1s linear, color 0.1s linear;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        ul.menu-main li a:hover {
+          background-color: #1F6299;
+          color: white;
+          border: none;
+          border-radius: 0;
+          padding: 0; }
+        ul.menu-main li a:active {
+          background-color: #1F6299; }
+        ul.menu-main li a.active {
+          border: none;
+          border-radius: 0;
+          padding: 0; }
+  .nav-burger {
+    margin: 0;
+    display: block;
+    background: url(../img/menu/icon-menu.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: transparent;
+    position: absolute;
+    top: 16px;
+    left: 25px;
+    z-index: 1; } }
